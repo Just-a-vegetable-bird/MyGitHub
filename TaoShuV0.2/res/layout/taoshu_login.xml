@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/taoshu_login_top"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/login_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_account_avatar_frame"
+            android:src="@drawable/icon_account_avatar" />
+    </RelativeLayout>
+    <!--
+         <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/taoshu_login_top" />    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_edt_username"
+            android:hint="@string/username_hint"
+            android:text="knight1" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_edt_password"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:text="123456" >
+
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+             >
+
+            <Button
+                android:id="@+id/taoshu_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:text="@string/login" 
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/taoshu_login"
+                android:layout_alignBottom="@+id/taoshu_login"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="忘记密码？" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/taoshu_login"
+                android:layout_alignBottom="@+id/taoshu_login"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/forget_password"
+                android:text="注册" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

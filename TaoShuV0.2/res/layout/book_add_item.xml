@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <ImageView
+        android:id="@+id/book_item_img"
+        android:layout_width="100.0dip"
+        android:layout_height="140.0dip"
+        android:background="@drawable/oracle" />
+
+    <RelativeLayout
+        android:id="@+id/book_item_iv_nocover_bg"
+        android:layout_width="100.0dip"
+        android:layout_height="140.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/book_item_iv_bookname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30.0dip"
+            android:maxLines="2"
+            android:text="book name"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/book_item_img"
+        android:layout_alignRight="@id/book_item_img"
+        android:layout_below="@id/book_item_img"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/book_item_bookname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="wefcfbdfgbsfgb"
+            android:textColor="#ff000000" />
+
+        <ImageView
+            android:id="@+id/book_item_vipV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/book_item_bookname"
+            android:background="@drawable/v"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/book_item_mark"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_alignBottom="@id/book_item_img"
+        android:background="@drawable/choose_mark"
+        android:padding="3.0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/book_item_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/book_select"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

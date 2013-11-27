@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="desktop_list_head_strings">
+        <item>常用</item>
+        <item>操作</item>
+    </string-array>
+    <string-array name="desktop_list_item_favorite_strings">
+        <item>我的书房</item>
+        <item>我的借书</item>
+        <item>扫描</item>
+        <item>好友</item>
+        <item>消息</item>
+        <item>附近</item>
+        <item>找书</item>
+    </string-array>
+    <string-array name="desktop_list_item_action_strings">
+        <item>选项</item>
+        <item>注销登录</item>
+    </string-array>
+    
+    <string-array  name="borrow_menu">
+        <item>添加借书</item>
+        <item>编辑</item>
+        <item>取消</item>
+    </string-array>
+</resources>

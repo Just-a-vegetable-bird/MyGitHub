@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title">#C8282626</color>
+    <color name="head">#C8c3c5c9</color>
+    <color name="line">#00c0ff</color>
+    <color name="slide_menu">#FF282626</color>
+    <color name="trans_line">#0569ff</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+</resources>
